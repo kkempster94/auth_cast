@@ -64,7 +64,7 @@ const DEFAULT_ARGS = [
 	'--start-maximized',
 	// '--load-media-router-component-extension',
 	// '--media-router-cast-allow-all-ips',
-	`--user-data-dir=${__dirname + '\\chrome_user_data\\'}`,
+	`--user-data-dir=${__dirname + '/chrome_user_data/'}`,
 	// disabled default args
 	// '--disable-background-networking',
 	// '--disable-default-apps',
@@ -129,7 +129,6 @@ async function ensureGoToUrl(page, url) {
 		await page.goto(url);
 		const currentUrl = stripUrl(page.url());
 		const desiredUrl = stripUrl(url);
-		console.log(currentUrl, desiredUrl);
 		isAtUrl = currentUrl === desiredUrl;
 	}
 }
