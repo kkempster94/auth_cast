@@ -153,7 +153,7 @@ async function main(page) {
 			
 			await page.type(passwordInputSelector, password);
 			await page.click(submitButtonSelector);
-			await waitSeconds(5);
+			await waitSeconds(2);
 			isLoggedIn = true;
 		}
 	} catch (error) {
