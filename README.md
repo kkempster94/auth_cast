@@ -4,14 +4,14 @@ Auth Cast is a tool which allows for any device to be used to cast a web page (l
 ### Getting Started
 To get started, clone this repo. You will then be able to run the script by calling from the command line from within the root directory of this project, like so:
 ```
-node index.js --loginUrl="http://github.com/login" --usernameInputSelector="#login" --passwordInputSelector="#pass"
+node index.js --url="http://google.com" --device="product tv"
 ```
 It's also worth noting that the page you cast will auto refresh every 5 minutes.
 #### Command Line Arguments
 | argument | validation | required | purpose |
 | ------ | ------ | ------ | ----- |
 | url | any valid accessible URL | yes | the URL of the page that you want to ultimately cast |
-| device | any lower-cased chromecast name on your network | yes | the name of the device you wish to cast to |
+| device | any lower-cased chromecast name on your network | yes | the name of the device you wish to cast to (lower cased) |
 | width | any valid width string (ex: "1920") | no | your desired viewport width |
 | height | any valid height string (ex: "1080") | no | your desired viewport height |
 | loginUrl | any valid accessible URL | no | The URL of the page to log into |
